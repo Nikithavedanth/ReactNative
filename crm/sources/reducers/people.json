@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "firstName":"Emanuel",
+        "lastName":"Henry",
+        "phone":"980-500-9211",
+        "company":"LinkedIn",
+        "project":"CRM Project",
+        "notes":"This is a note"
+    },
+    {
+        "id":2,
+        "firstName":"Nikitha",
+        "lastName":"Madabhushi",
+        "phone":"980-500-9211",
+        "company":"Wipro",
+        "project":"CRM Project 2",
+        "notes":"This is a note 2"
+    },
+    {
+        "id":3,
+        "firstName":"Isha",
+        "lastName":"Kasanagottu",
+        "phone":"980-500-9211",
+        "company":"Venquest",
+        "project":"CRM Project 3",
+        "notes":"This is a note 3"
+    }
+]

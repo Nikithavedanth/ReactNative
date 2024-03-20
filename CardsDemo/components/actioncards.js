@@ -91,7 +91,7 @@ const styles= StyleSheet.create({
         fontSize:16,
         color:'white',
         backgroundColor:'black',
-        paddingHorizontal:20,
+        paddingHorizontal:30,
         paddingVertical:6,
         borderRadius: 6,
         textDecorationLine:"underline",
