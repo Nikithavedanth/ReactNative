@@ -26,7 +26,7 @@ flag:{
 },
 country:{
     fontSize:14,
-    color:'#2d3436',
+    color:'#2D3436',
     // marginBottom:4
 },
 })

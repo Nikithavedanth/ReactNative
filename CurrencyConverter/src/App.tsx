@@ -112,17 +112,17 @@ const styles = StyleSheet.create({
     height: 60,
 
     borderRadius: 12,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFFFFF',
     elevation: 2,
     shadowOffset: {
       width: 1,
       height: 1,
     },
-    shadowColor: '#333',
+    shadowColor: '#333333',
     shadowOpacity: 0.1,
     shadowRadius: 1,
   },
   selected: {
-    backgroundColor: '#ffeaa7',
+    backgroundColor: '#FFEAA7',
   },
 });
