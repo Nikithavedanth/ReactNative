@@ -15,11 +15,13 @@ import Italian from '../components/italian';
 import Asian from '../components/asian';
 import Desserts from '../components/desserts.';
 import Vegetarian from '../components/vegetarian';
+import BottomTabNavigation from '../screens/bottomtabnavigation';
+import ExtraScreen from '../components/extrascreen';
 // import PopularDishes from '../components/populardishes';
 function AppNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName ="login" screenOptions={{headerShown:false}}>
+      <Stack.Navigator  screenOptions={{headerShown:false}}>
         <Stack.Screen name='Welcome' component={WelcomeScreen}></Stack.Screen>
         <Stack.Screen name='Login' component={Login}></Stack.Screen>
         <Stack.Screen name='Register' component={SignUp}></Stack.Screen>
@@ -33,6 +35,8 @@ function AppNavigation() {
         <Stack.Screen name='Vegetarian' component={Vegetarian}></Stack.Screen>
         <Stack.Screen name='Recipe List' component={RecipeListScreen}></Stack.Screen>
         <Stack.Screen name='Recipe Details' component={RecipeDetailsScreen}></Stack.Screen>
+        <Stack.Screen name='Bottom Navigation ' component={BottomTabNavigation} options={{headerShown:false}}></Stack.Screen>
+        <Stack.Screen name='Extra Screen' component={ExtraScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -22,10 +22,12 @@ const SignUp = ({navigation}) => {
       <Text style={styles.TextField}>Confirm Password:</Text>
       <TextInput style={styles.Input} name={password}placeholder='confirm the password'/>
       <Button title='SignUp'/>
+      <View style={{flexDirection:'row'}}>
       <Text>already registered?</Text>
       <TouchableOpacity onPress={()=>navigation.navigate('Login')}> 
-      <Text style={{textDecorationLine:'underline'}}>Login</Text>
+      <Text style={{textDecorationLine:'underline',marginHorizontal:155,fontWeight:'bold'}}>Login</Text>
       </TouchableOpacity>
+      </View>
       
     </View>
     

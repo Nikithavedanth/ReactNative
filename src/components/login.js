@@ -18,11 +18,13 @@ const Login = ({navigation}) => {
      
       <Text style={styles.TextField}>Password:</Text>
       <TextInput style={styles.Input} name={password}placeholder='enter the password'/>
-      <Button title='Login'onPress={()=>navigation.navigate('Recipe List')}/>
-      <Text>did not signup?</Text>
+      <Button title='Login'onPress={()=>navigation.navigate('Extra Screen')}/>
+      <View style={{flexDirection:'row'}}>
+      <Text >Not yet Signed up?</Text>
       <TouchableOpacity onPress={()=>navigation.navigate('Register')}> 
-      <Text style={{textDecorationLine:'underline'}}>SignUp</Text>
+      <Text style={{textDecorationLine:'underline', marginHorizontal:150, fontWeight:'bold'}}>SignUp</Text>
       </TouchableOpacity>
+      </View>
       
     </View>
     
