@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView ,Platform, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView ,Platform, Pressable, TouchableOpacity,Image } from 'react-native';
 import { categoriesList, colors } from '../constants';
 import { useNavigation } from '@react-navigation/native';
 
@@ -30,7 +30,7 @@ function CategoryChange(index){
       navigation.navigate('Vegetarian');
       break;
     case '08':
-      navigation.navigate('Lunch');
+      navigation.navigate('SeaFood');
       break;
         // Add cases for other categories as needed
     default:
@@ -45,17 +45,25 @@ function CategoryChange(index){
         {
             categories.map((category, index)=>{
                 return (
-                <TouchableOpacity  onPress={() => CategoryChange(index)} key={category.id} style={{backgroundColor:colors.COLOR_PRIMARY, marginRight:36, borderRadius:8, paddingHorizontal:16,paddingVertical:10,    ...Platform.select({
-                    ios: {
-                      shadowColor: 'black',
-                      shadowOffset: { width: 0, height: 4 },
-                      shadowOpacity: 0.3,
-                      shadowRadius: 7,
-                    },
-                    android: {
-                      elevation: 4, // Use elevation for Android
-                    }  }) ,marginVertical:16}}>
-                    <Text style={{color: index === category[index] && colors.COLOR_LIGHT, fontSize:18}}>{category.category}</Text>
+                <TouchableOpacity  onPress={() => CategoryChange(index)} key={category.id} 
+                style={{
+                  // backgroundColor:colors.COLOR_PRIMARY,
+                   marginRight:36, 
+                  // borderRadius:8, paddingHorizontal:16,paddingVertical:10,   
+                  // ...Platform.select({
+                  //   ios: {
+                  //     shadowColor: 'black',
+                  //     shadowOffset: { width: 0, height: 4 },
+                  //     shadowOpacity: 0.3,
+                  //     shadowRadius: 7,
+                  //   },
+                  //   android: {
+                  //     elevation: 4, // Use elevation for Android
+                  //   }  }) ,
+                  marginVertical:16}}>
+                   
+                    <Image style={{width:100,height:100,borderRadius:50}}source={category.image}/>
+                     <Text style={{color: index === category[index] && colors.COLOR_PRIMARY, fontSize:18, marginHorizontal:20}}>{category.category}</Text>
                 </TouchableOpacity>
             )})
         }

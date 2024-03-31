@@ -17,6 +17,7 @@ import Desserts from '../components/desserts.';
 import Vegetarian from '../components/vegetarian';
 import BottomTabNavigation from '../screens/bottomtabnavigation';
 import ExtraScreen from '../components/extrascreen';
+import AddLikes from '../components/addlikesview';
 // import PopularDishes from '../components/populardishes';
 function AppNavigation() {
   return (
@@ -37,6 +38,7 @@ function AppNavigation() {
         <Stack.Screen name='Recipe Details' component={RecipeDetailsScreen}></Stack.Screen>
         <Stack.Screen name='Bottom Navigation ' component={BottomTabNavigation} options={{headerShown:false}}></Stack.Screen>
         <Stack.Screen name='Extra Screen' component={ExtraScreen}></Stack.Screen>
+        <Stack.Screen name='Add Likes' component={AddLikes}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

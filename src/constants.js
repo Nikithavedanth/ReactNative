@@ -11,34 +11,42 @@ export const categoriesList = [
 	{
 		id: "01",
 		category: "Breakfast",
+		image:require('../assets/images/breakfast.jpeg'),
 	},
 	{
 		id: "02",
 		category: "Lunch",
+		image:require('../assets/images/lunch.jpeg'),
 	},
 	{
 		id: "03",
 		category: "Dinner",
+		image:require('../assets/images/dinner.jpeg'),
 	},
 	{
 		id: "04",
 		category: "Asian",
+		image:require('../assets/images/asian.jpeg'),
 	},
 	{
 		id: "05",
 		category: "Italian",
+		image:require('../assets/images/italian.jpeg'),
 	},
 	{
 		id: "06",
 		category: "Desserts",
+		image:require('../assets/images/desserts.jpeg'),
 	},
 	{
 		id: "07",
 		category: "Vegetarian",
+		image:require('../assets/images/vegetarian.jpeg'),
 	},
 	{
 		id: "08",
 		category: "Seafood",
+		image:require('../assets/images/seafood.jpeg'),
 	},
 ];
 

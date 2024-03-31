@@ -20,8 +20,8 @@ const RecipeListScreen = () => {
         <CategoriesFilter/>
      </View>
 
-     <View style={{marginTop:22,flex:1, marginBottom:100}}>
-        <Text style={{fontSize:22, fontWeight:'bold'}}> Popular Recipes</Text>
+     <View style={{marginTop:12,flex:1, marginBottom:100}}>
+        <Text style={{fontSize:22, fontWeight:'bold', marginHorizontal:120,marginBottom:10  }}> Popular Recipes</Text>
         <RecipeCard/>
      </View>
      {/* <BottomTabNavigation/> */}

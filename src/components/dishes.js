@@ -18,10 +18,11 @@ const BreakFast= () => {
             {/* <FontAwesome name={'heart-o'} size={28} style={{marginTop:40}} color='black'/> */}
         </SafeAreaView>
     <View style={{flex:1,marginTop:20}}>
-      <SearchFilter icon='search' placeholder='enter your favourite recipe'/>
+      {/* <SearchFilter icon='search' placeholder='enter your favourite recipe'/> */}
+      <Text style={{fontSize:20, fontWeight:'bold',padding:20, backgroundColor:'lightblue',marginHorizontal:10, borderRadius:10}}>Breakfast Recipes</Text>
    <View>
       <FlatList data={breakFast} renderItem={({item})=>(
-        <Pressable onPress={()=> navigation.navigate('Recipe Details', {item:item})} style={{backgroundColor:colors.COLOR_LIGHT, ...Platform.select({
+        <Pressable onPress={()=> navigation.navigate('Recipe Details', {item:item})} style={{marginHorizontal:20,backgroundColor:colors.COLOR_LIGHT, ...Platform.select({
             ios: {
               shadowColor: 'black',
               shadowOffset: { width: 0, height: 4 },

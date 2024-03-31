@@ -8,6 +8,7 @@ import { colors } from '../constants';
 import SearchFilter from '../components/searchfilter';
 import Profile from '../components/profile';
 import RecipeCard from '../components/recipecard';
+import AddLikes from '../components/addlikesview';
 const Tab = createBottomTabNavigator();
 const screenOptions={
     tabBarShowLabel:false,
@@ -29,7 +30,7 @@ const BottomTabNavigation = () => {
       <Tab.Screen name="Recipe List" component={RecipeListScreen} options={{tabBarIcon:({focused})=>{
         return <Ionicons name={focused ? 'home':'home-outline' } size={24} color={ colors.COLOR_PRIMARY}/>
       }}}/>
-      <Tab.Screen name=" Recipe Card" component={RecipeCard} options={{tabBarIcon:({focused})=>{
+      <Tab.Screen name="Add Likes" component={AddLikes} options={{tabBarIcon:({focused})=>{
         return <Ionicons name={focused ?'fast-food':'fast-food-outline'} size={24} color={ colors.COLOR_PRIMARY}/>
       }}}/>
       <Tab.Screen name="Profile" component={Profile} options={{tabBarIcon:({focused})=>{

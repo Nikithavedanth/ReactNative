@@ -5,19 +5,48 @@ import { View, Text, Image, SafeAreaView, Pressable, ScrollView, TouchableOpacit
 const RecipeDetailsScreen = ({navigation, route}) => {
     const {item} = route.params;
     const [liked, setLiked] = useState(false);
+//     const [likeCount, setLikeCount] = useState(0);
+//     const [likedItems, setLikedItems] = useState([]);
 
   const handleLikePress = () => {
     setLiked(!liked); // Toggle the liked state
-  };
+    // setLikeCount(liked ? likeCount - 1 : likeCount + 1); // Update like count
+
+//     // Add/remove item from the list of liked items
+//     if (!likedItems.some((likedItem) => likedItem.id === item.id)) {
+//         setLikedItems([...likedItems, item]); // Add item to liked list
+//     } else {
+//         setLikedItems(likedItems.filter((likedItem) => likedItem.id !== item.id)); // Remove item from liked list
+//     }
+
+//     // Navigate to Liked Items Screen
+//     navigation.navigate('Add Likes');
+//   }
+//   const likedItem =({items})=>{
+//     return(
+//     <FlatList
+//     data={items}
+//     keyExtractor={(item) => item.id}
+//     renderItem={({ item }) => <Text>{item.category}</Text>}
+//   />)
+  }
+
+//   const addToCart = (item) => {
+//     setCartItems([...cartItems, item]);
+//   };
+
+
   return (
     <View style={{backgroundColor:item.color, flex:1}}>
         <SafeAreaView style={{flexDirection:'row', marginHorizontal:16}}>
-            <Pressable style={{flex:1, marginTop:40}} onPress={()=>navigation.goBack()}>
+            <TouchableOpacity style={{flex:1, marginTop:40}} onPress={()=>navigation.goBack()}>
             <FontAwesome name={'arrow-circle-left'} size={28}  color='black' />
             
-            </Pressable>
+            </TouchableOpacity>
+           
             <TouchableOpacity onPress={handleLikePress}>
-            <FontAwesome name={liked ? 'heart' : 'heart-o'} size={28} style={{marginTop:40}} color={liked ? 'red' : 'black'}/></TouchableOpacity>
+            <FontAwesome name={liked? 'heart' : 'heart-o'} size={28} style={{marginTop:40}} color={liked ? 'red' : 'black'}/></TouchableOpacity>
+            {/* <Text>{likeCount}</Text> */}
         </SafeAreaView>
         <View style={{backgroundColor:'#ffffff', flex:1, marginTop:180, borderTopLeftRadius:56,borderTopRightRadius:56, alignItems:'center', paddingHorizontal:16}}>
             <View style={{

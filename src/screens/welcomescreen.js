@@ -5,7 +5,7 @@ import Swiper from 'react-native-swiper';
 export function WelcomeScreen({navigation}) {
   return (
     <Swiper  showsButtons={true} 
-    // autoplay={true}
+    autoplay={true}
     >
   
       <ImageBackground style={{flex:1, alignItems:'center',justifyContent:'center', opacity:0.9}} resizeMode='cover' source={require('../../assets/images/bg3.jpeg')}>
