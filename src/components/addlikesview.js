@@ -8,8 +8,9 @@ const AddLikes = ({ likeItem }) => {
     const navigation = useNavigation()
   return (
     <View>
-      <FlatList data={likeItem} renderItem={({item})=>(
-        <Pressable onPress={()=> navigation.navigate('Recipe Details', {item:item})} style={{backgroundColor:colors.COLOR_LIGHT, ...Platform.select({
+      <Text style={{marginTop:50, marginLeft:185, fontSize:20, fontWeight:'bold', marginBottom:20}}>Favourites</Text>
+      <FlatList data={recipeList} renderItem={({item})=>(
+        <Pressable onPress={()=> navigation.navigate('Recipe Details', {item:item})} style={{marginHorizontal:20,backgroundColor:colors.COLOR_LIGHT, ...Platform.select({
             ios: {
               shadowColor: 'black',
               shadowOffset: { width: 0, height: 4 },

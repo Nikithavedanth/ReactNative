@@ -9,18 +9,18 @@ export function WelcomeScreen({navigation}) {
     >
   
       <ImageBackground style={{flex:1, alignItems:'center',justifyContent:'center', opacity:0.9}} resizeMode='cover' source={require('../../assets/images/bg3.jpeg')}>
-      <Text style={{color:"black", fontSize:40, fontWeight:'bold', alignItems:'center', shadowColor: 'black',
+      <Text style={{color:"black", fontSize:40, fontWeight:'bold', alignItems:'center', shadowColor: 'black',color:'white',
                       shadowOffset: { width: 0, height: 4 },
                       shadowOpacity: 0.3,
                       shadowRadius: 7,}}>Food Recipes</Text>
-      <Text style={{color:"black", fontSize:30, fontWeight:'bold', alignItems:'center'}}>Slide further for exciting Recipes</Text>
+      <Text style={{color:"black", fontSize:30, fontWeight:'bold', alignItems:'center',color:'white'}}>Slide further for exciting Recipes</Text>
       {/* <Text style={{fontSize:42, fontWeight:'bold',color:'#3c444c', marginTop:44, marginBottom:40,}}>Cook like a Pro Chef</Text> */}
       </ImageBackground>
    
 
     
       <ImageBackground style={{flex:1, alignItems:'center',justifyContent:'center',opacity:0.9}} resizeMode='cover' source={require('../../assets/images/bg4.jpeg')}>
-      <Text style={{color:"black", fontSize:40, fontWeight:'bold',alignItems:'center',}}>Explore more for delicious recipes.....</Text>
+      <Text style={{color:"black", fontSize:40, fontWeight:'bold',alignItems:'center',color:'white'}}>Explore more for delicious recipes.....</Text>
       {/* <Text style={{fontSize:42, fontWeight:'bold',color:'#3c444c', marginTop:44, marginBottom:40,}}></Text> */}
       </ImageBackground>
 
